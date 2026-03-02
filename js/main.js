@@ -78,7 +78,23 @@ $(document).ready(function () {
         }
     })
     // navbar collapse
-    $('.nav-link').on("click", function(){
+    $('.nav-link').on("click", function () {
         $('.navbar-collapse').collapse('hide')
+    })
+
+    if (localStorage.getItem('darkMode') === 'enabled') {
+        $('body').addClass('dark')
+        $('.darkmode-toggle').addClass('active')
+    }
+
+    $('.darkmode-toggle').on("click", function () {
+        $(this).toggleClass('active')
+        $('body').toggleClass('dark')
+
+        if ($('body').hasClass('dark')) {
+            localStorage.setItem('darkMode', 'enabled')
+        } else {
+            localStorage.setItem('darkMode', 'disabled')
+        }
     })
 })
