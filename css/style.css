@@ -1057,6 +1057,7 @@ a:hover {
     border-radius: 50%;
     transition: all .3s ease;
     background-color: transparent;
+    z-index: 1000;
 }
 
 .darkmode-toggle.active {
