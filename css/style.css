@@ -145,6 +145,7 @@ a:hover {
     color: var(--main-color);
     font-weight: 500;
     text-transform: capitalize;
+    margin-left: 10px;
 }
 
 .navbar .nav-item {
@@ -929,6 +930,7 @@ a:hover {
         padding: 0;
         font-size: 17px;
         color: var(--white);
+        margin-right: 10px;
     }
 
     .navbar-nav {
